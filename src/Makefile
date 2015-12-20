@@ -24,6 +24,8 @@ MYLDFLAGS=
 MYLIBS=
 MYOBJS=
 
+SRCDIR=.
+
 # == END OF USER SETTINGS -- NO NEED TO CHANGE ANYTHING BELOW THIS LINE =======
 
 PLATS= aix bsd c89 freebsd generic linux macosx mingw posix solaris
@@ -46,6 +48,7 @@ ALL_O= $(BASE_O) $(LUA_O) $(LUAC_O)
 ALL_T= $(LUA_A) $(LUA_T) $(LUAC_T)
 ALL_A= $(LUA_A)
 
+VPATH= $(SRCDIR)
 # Targets start here.
 default: $(PLAT)
 
